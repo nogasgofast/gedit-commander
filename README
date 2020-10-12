@@ -1,7 +1,30 @@
-gedit commander is a gedit plugin providing a command line interface
-to gedit. The idea is to write pluggable python modules which can be
-invoked from this command line, resulting in a sort of mini plugins.
+Not gedit-commander
+If your looking for gedit-commander it's over at: alexkv/gedit-commander
+This project was forked from there.
 
-To 'install', put 'commander' and 'commander.gedit-plugin' in
-~/.gnome2/gedit/plugins and put 'modules' in 
-~/.gnome2/gedit/commander/ (create this directory first).
+*under construction*
+
+One of may favorite text editors of all time had a utility 
+that allowed me to edit the contents of the file i was looking at in whole. *scribes*
+
+Although commander is close, it's objectives are different instead attempting 
+to create an entirely new plugin eco system.
+
+My Ideal workflow is: 
+1. take the whole document in as input 
+2. pipe that input to standard-in for commands. 
+3. replace the entire file contents or make a new file.
+4. Optionally close the command window to get out of the way.
+
+The benofit? You can make use of all of the functions you get with bash,
+which is already robust and well understood. With the added benofit of 
+not needing to mess with input and output files. Making it more useful then 
+bash. And a lot faster then a average text editor. 
+
+And there would be no need for much documentation. In example:
+1.open command terminal
+2. type: sort -k3
+3. hit enter and your document is sorted by column 3 and the 
+applet is gone allowing you to type without the app stealing text.
+
+At least that's the idea. We'll see if I can make it work.
